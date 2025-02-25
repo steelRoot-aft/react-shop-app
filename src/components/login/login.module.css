@@ -1,0 +1,60 @@
+.body {
+  padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 120%;
+    right: 0;
+    width: 250px;
+    max-width: 100%;
+    border-radius: 10px;
+    background: #F0F0F0;
+}
+
+.body form {
+  display: grid;
+  grid-template: repeat(3, 40px) / 1fr;
+  gap: 10px;
+}
+
+.username {
+  display: grid;
+}
+
+.username input {
+  border-radius: 7px;
+  padding: 0 10px;
+}
+
+.password {
+  display: grid;
+}
+
+.password input {
+  border-radius: 7px;
+  padding: 0 10px;
+}
+
+.body form button {
+  margin: 0 auto;
+  width: 200px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 7px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.body form button:hover {
+  background: #d4d3d3;
+}
+
+@media (max-width: 767px) {
+  .body {
+    position: fixed;
+    top: 80px;
+      right: 15px;
+  }
+}

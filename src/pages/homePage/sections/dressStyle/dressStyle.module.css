@@ -1,0 +1,84 @@
+.container {
+  display: grid;
+  grid-template: 1fr / 1fr minmax(auto, 1240px) 1fr;
+  padding: 20px 15px 80px 15px;
+}
+
+.body {
+  grid-column: 2 / 3;
+  border-radius: 40px;
+  padding: 60px;
+  background: #F0F0F0;
+}
+
+/* Title */
+
+.body h2 {
+  text-align: center;
+  padding: 0 0 65px 0;
+}
+
+/* Cards Block */
+
+.cards {
+  display: grid;
+  gap: 20px;
+}
+
+/* Top Cards */
+
+.topColumn {
+  display: grid;
+  grid-template: 290px / minmax(auto,400px) 1fr;
+  gap: 20px;
+}
+
+/* Bottom Cards */
+
+.bottomColumn {
+  display: grid;
+  grid-template: 290px / 1fr minmax(auto, 400px);
+  gap: 20px;
+}
+
+/* All column */
+
+.column {
+  background: #fff;
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+  padding: 25px 35px;
+  color: #000;
+}
+
+/* 1-4 Column */
+
+.topColumn .column:nth-child(1)  {
+  background: url(../../../../assets/dressStyleBg1.png) center / cover no-repeat;
+}
+
+.topColumn .column:nth-child(2)  {
+  background: url(../../../../assets/dressStyleBg2.png) center / cover no-repeat;
+}
+
+.bottomColumn .column:nth-child(1)  {
+  background: url(../../../../assets/dressStyleBg3.png) center / cover no-repeat;
+}
+
+.bottomColumn .column:nth-child(2)  {
+  background: url(../../../../assets/dressStyleBg4.png) center / cover no-repeat;
+}
+
+@media (max-width: 767px) {
+
+  .topColumn, .bottomColumn {
+    grid-template: repeat(2, 190px) / 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .body {
+    padding: 40px 20px;
+  }
+}
